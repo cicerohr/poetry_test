@@ -1,0 +1,16 @@
+site_name: Teste Poetry
+repo_url: https://github.com/cicerohr/poetry_test
+repo_name: cicerohr/poetry_test
+edit_uri: tree/main/docs
+
+theme:
+  name: material
+  language: pt-BR
+  logo: assets/feather.png
+  favicon: assets/feather.png
+
+markdown_extensions:
+  - attr_list
+
+extra_css:
+  - stylesheets/extra.css
