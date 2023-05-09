@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Teste do Poetry"
 authors = ["Cícero <cierohr@gmail.com>"]
 readme = "README.md"
-packages = [{ include = "poetry_teste" }]
+packages = [{ include = "src" }]
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -35,7 +35,7 @@ line_length = 79
 
 [tool.taskipy.tasks]
 lint = "blue --check --diff . && isort --check --diff ."
-docs = "mkdocs serve"
+docs = "mkdocs serve --watch src"
 pre_test = "task lint"
-test = "pytest -s -x --cov=poetry_teste -vv"
+test = "pytest -s -x --cov=src -vv"
 post_test = "coverage html"
